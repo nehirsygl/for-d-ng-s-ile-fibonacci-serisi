@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp29
+{
+    /*
+    Soru 4 - For Döngüsü ile Fibonacci Serisi  Kullanıcıdan bir sayı girmesini isteyin.
+    Bu sayı kadar Fibonacci serisindeki sayıları hesaplayıp ekrana yazdıran bir program yazınız. 
+    for döngüsü kullanarak seriyi oluşturun. Örnek: Eğer kullanıcı 5 girerse, ekranda "0 1 1 2 3" yazmalıdır.
+    */
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("bir sayı giriniz: ");
+            int n = int.Parse(Console.ReadLine());
+            int x = 0, y = 1, z;
+            Console.WriteLine(x + y);
+            for (int i = 2; i < n; i++) 
+            { z = x + y; 
+            Console.WriteLine(z); x = y; y = z;
+            }
+        }
+    }
+}
